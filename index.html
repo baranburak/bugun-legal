@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BUGÜN Gizlilik, Kullanım Şartları ve Destek</title>
+<style>
+  :root { --bg:#f7f8fa; --surface:#fff; --soft:#dcf0ed; --border:#dde3e7; --text:#12242f; --muted:#5b6b76; --faint:#93a2aa; --accent:#2f8f86; --ink:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0c1216; --surface:#161d22; --soft:#142825; --border:#202b31; --text:#f1f4f5; --muted:#a5b6be; --faint:#708089; --accent:#4fb3a8; --ink:#06110f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:var(--accent); }
+  header { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px clamp(20px,6vw,56px); background:var(--bg); border-bottom:1px solid var(--border); }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:700; text-decoration:none; color:var(--text); }
+  .mark { width:30px; height:30px; border-radius:9px; background:linear-gradient(135deg,#2f8f86,#2e6fa8); display:grid; place-items:center; }
+  .mark svg { width:15px; height:15px; }
+  nav { display:flex; gap:4px; flex-wrap:wrap; }
+  nav a { text-decoration:none; color:var(--muted); font-size:.9rem; font-weight:500; padding:7px 13px; border-radius:999px; }
+  nav a:hover, nav a:focus-visible { background:var(--soft); color:var(--accent); outline:none; }
+  main { max-width:760px; margin:0 auto; padding:0 clamp(20px,6vw,56px) 80px; }
+  .hero { padding:52px 0 32px; border-bottom:1px solid var(--border); }
+  .eyebrow { font-size:.75rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); }
+  h1 { font-size:clamp(1.9rem,4.5vw,2.5rem); line-height:1.15; margin:10px 0 0; text-wrap:balance; }
+  .lede { margin:16px 0 0; max-width:60ch; color:var(--muted); font-size:1.05rem; }
+  .meta { margin-top:18px; font-size:.85rem; color:var(--faint); }
+  section { padding:40px 0; border-bottom:1px solid var(--border); }
+  section:last-of-type { border-bottom:none; }
+  h2 { font-size:1.25rem; margin:28px 0 12px; scroll-margin-top:74px; }
+  h2:first-child { margin-top:0; }
+  p, ul { max-width:65ch; margin:0 0 14px; }
+  li { margin-bottom:8px; }
+  li::marker { color:var(--accent); }
+  .tbl { overflow-x:auto; }
+  table { width:100%; max-width:65ch; border-collapse:collapse; font-size:.88rem; margin:4px 0 18px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--faint); font-size:.74rem; text-transform:uppercase; letter-spacing:.05em; }
+  td:last-child { color:var(--muted); }
+  .callout { background:var(--soft); border:1px solid var(--border); border-radius:14px; padding:16px 18px; max-width:65ch; font-size:.92rem; margin:18px 0; }
+  .btn { display:inline-block; text-decoration:none; font-weight:600; font-size:.9rem; color:var(--ink); background:var(--accent); padding:9px 16px; border-radius:999px; }
+  footer { max-width:760px; margin:0 auto; padding:24px clamp(20px,6vw,56px) 48px; color:var(--faint); font-size:.82rem; }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>BUGÜN</a>
+  <nav aria-label="Sayfa içi">
+    <a href="#gizlilik">Gizlilik Politikası</a>
+    <a href="#kullanim-sartlari">Kullanım Şartları</a>
+    <a href="#destek">Destek</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="eyebrow">Gizlilik, Kullanım Şartları &amp; Destek</div>
+    <h1>Verin cihazından çıkmaz. Biz de öyle istiyoruz.</h1>
+    <p class="lede">BUGÜN, hesap gerektirmeyen, tamamen cihazında çalışan bir hatırlatma uygulaması. Bu sayfa verinin nerede durduğunu, kullanım şartlarını ve bir sorunda bize nasıl ulaşacağını anlatıyor.</p>
+    <div class="meta">Son güncelleme: <strong>8 Ekim 2026</strong> · Sürüm 1.0</div>
+  </div>
+
+  <section id="gizlilik">
+    <h2>Gizlilik Politikası</h2>
+    <h2>1. Neyi topluyoruz — neyi toplamıyoruz</h2>
+    <p>BUGÜN kendi sunucusuna hiçbir şey göndermiyor, çünkü öyle bir sunucumuz yok. Hatırlatmaların, kategorilerin, notların ve eklediğin fotoğraflar <strong>yalnızca bu cihazda</strong>, Apple'ın SwiftData veritabanında tutulur. Profil adın ve fotoğrafın da aynı şekilde cihazda, yalnızca görünümü kişiselleştirmek için tutulur.</p>
+    <p>"AI ile ekle" özelliğini kullanmayı seçersen — ve yalnızca o an — yazdığın cümle (ya da fotoğraftan cihaz üzerinde okunan metin), kendi girdiğin Anthropic API anahtarınla doğrudan Anthropic'in sunucusuna gider ve yapılandırılmış bir hatırlatma önerisi olarak geri döner. Bu istek BUGÜN'ün bir sunucusundan geçmez.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Veri</th><th>Nerede durur</th><th>Kiminle paylaşılır</th></tr></thead>
+      <tbody>
+        <tr><td>Hatırlatmalar, kategoriler, notlar</td><td>Cihazında (SwiftData)</td><td>Kimseyle</td></tr>
+        <tr><td>Eklediğin fotoğraflar</td><td>Cihazında</td><td>Kimseyle — Anthropic'e görsel değil, yalnızca okunan metin gider</td></tr>
+        <tr><td>Profil adı / fotoğrafı</td><td>Cihazında (UserDefaults)</td><td>Kimseyle</td></tr>
+        <tr><td>Anthropic API anahtarın</td><td>Cihazında (Keychain)</td><td>Yalnızca Anthropic'e, isteklerini doğrulamak için</td></tr>
+        <tr><td>"AI ile ekle" metni</td><td>İşlenir, BUGÜN tarafından saklanmaz</td><td>Anthropic — yalnızca bu özelliği kullandığında</td></tr>
+        <tr><td>Bildirimler</td><td>Cihazında (iOS)</td><td>Kimseyle — push sunucusu yok, hepsi yerel</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><strong>Anthropic'in kendi verisi:</strong> "AI ile ekle"yi kullandığında istek, Anthropic'in <a href="https://www.anthropic.com/legal/privacy" rel="noopener">gizlilik politikasına</a> tabi olur; kendi API anahtarınla doğrudan onlara bağlanıyorsun.</div>
+
+    <h2>2. İzinler</h2>
+    <ul>
+      <li><strong>Bildirimler</strong> — hatırlatmaların zamanı geldiğinde uyarmak için; tamamen yerel.</li>
+      <li><strong>Kamera</strong> — yalnızca "Fotoğraf çek" dediğinde; fotoğraf cihazında kalır.</li>
+      <li><strong>Fotoğraflar</strong> — yalnızca "Galeriden seç" dediğinde.</li>
+      <li><strong>Takvim / Hatırlatıcılar</strong> — yalnızca Profil'den entegrasyonu sen tetiklersen.</li>
+    </ul>
+
+    <h2>3. Takip yok, reklam yok</h2>
+    <p>BUGÜN analiz/izleme SDK'sı kullanmaz, reklam göstermez, cihaz kimliğini paylaşmaz ve veri satmaz.</p>
+
+    <h2>4. Abonelik (Premium)</h2>
+    <p>Satın alımlar App Store üzerinden, Apple'ın StoreKit altyapısıyla işlenir. Ödeme bilgilerin bize ulaşmaz.</p>
+
+    <h2>5. Verini silmek</h2>
+    <p>Tek bir hatırlatmayı uygulama içinde silebilirsin. Tüm verini kaldırmak için uygulamayı cihazından silmen yeterli; hiçbir sunucuda kopyası yoktur.</p>
+
+    <h2>6. Çocukların gizliliği</h2>
+    <p>BUGÜN çocuklara yönelik değildir ve 13 yaş altından veri toplamaz.</p>
+
+    <h2>7. Değişiklikler</h2>
+    <p>Bu sayfa güncellenirse üstteki tarih değişir; önemli değişiklikler uygulama içinde de duyurulur.</p>
+  </section>
+
+  <section id="kullanim-sartlari">
+    <h2>Kullanım Şartları (EULA)</h2>
+    <p>BUGÜN, Apple'ın standart Lisanslı Uygulama Son Kullanıcı Lisans Sözleşmesi'ni (Standard EULA) kullanır:</p>
+    <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+    <p>Premium abonelikler, satın alma onayında seçtiğin süre (aylık veya yıllık) için otomatik yenilenir; mevcut dönem bitmeden en az 24 saat önce iptal edilmezse yenilenir. Aboneliğini istediğin zaman iPhone'unda <strong>Ayarlar → [adın] → Abonelikler</strong> bölümünden yönetebilir veya iptal edebilirsin. Ödeme, satın alma onayında Apple ID hesabından tahsil edilir.</p>
+  </section>
+
+  <section id="destek">
+    <h2>Destek</h2>
+    <p>Bir sorun mu var, bir öneri mi getirmek istiyorsun? Doğrudan bana yaz; genelde 1-2 gün içinde dönüş yaparım. Yazarken ne yapmaya çalıştığını, ne olmasını beklediğini ve ne olduğunu (mümkünse bir ekran görüntüsüyle) eklersen daha hızlı çözebilirim.</p>
+    <p><a class="btn" href="mailto:baranburak17@gmail.com?subject=BUG%C3%9CN%20-%20Destek">baranburak17@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>© 2026 BUGÜN</footer>
+</body>
+</html>
